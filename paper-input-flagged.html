@@ -138,6 +138,13 @@ A LRN element
         },
       },
       /**
+       * Created life cycle
+       */
+      ready: function() {
+      	// drop what the behavior brought in
+      	this.removeAttribute('tabindex');
+      },
+      /**
        * testStatus based on current input
        */
       testStatus: function(test, value) {
